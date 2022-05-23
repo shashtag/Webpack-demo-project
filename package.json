@@ -5,7 +5,8 @@
   "description": "learning webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js "
+    "start": "webpack-dev-server --config webpack.dev.js --open ",
+    "build": "webpack --config webpack.prod.js "
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
   }
 }
